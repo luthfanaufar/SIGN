@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fire_sample"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:paddingLeft="5pt"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/background_dark"
+        android:alpha="0.7"
+        android:layout_alignParentEnd="false">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="5pt"
+                android:layout_marginLeft="5pt"
+                android:layout_width="30pt"
+                android:onClick="fireClick()"
+                android:src="@drawable/fire"
+                android:adjustViewBounds="true" />
+            <ImageView
+                android:layout_width="30pt"
+                android:layout_marginRight="5pt"
+                android:layout_marginLeft="5pt"
+                android:onClick="fireClick()"
+                android:adjustViewBounds="true"
+                android:src="@drawable/first_aid" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30pt"
+                android:layout_marginRight="5pt"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="5pt"
+                android:onClick="fireClick()"
+                android:src="@drawable/natural_hazard" />
+            <ImageView
+                android:layout_width="30pt"
+                android:layout_marginRight="5pt"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="5pt"
+                android:onClick="fireClick()"
+                android:src="@drawable/crime" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10pt"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30pt"
+                android:layout_marginRight="5pt"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="5pt"
+                android:onClick="fireClick()"
+                android:src="@drawable/accident" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="20pt"
+        android:src="@drawable/arrow"
+        android:onClick="goToRecent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        android:paddingBottom="10pt"
+        android:layout_height="wrap_content" />
+        <!--android:background="@android:color/background_dark"-->
+
+
+</RelativeLayout>

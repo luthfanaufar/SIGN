@@ -1,0 +1,344 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_dark"
+    tools:context="com.aidindonesia.project.sign.ResponseActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="2pt"
+        android:paddingLeft="2pt"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2pt"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <ImageView
+                        android:id="@+id/posterImage"
+                        android:layout_height="20pt"
+                        android:layout_width="20pt"
+                        android:src="@drawable/ruslan"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20pt"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5pt"
+                            android:paddingRight="2pt"
+                            android:textColor="@android:color/white"
+                            android:text="Ruslan Hafiz"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:paddingLeft="5pt"
+                            android:paddingRight="2pt"
+                            android:text="12/Des/2014 | 14:14"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:paddingBottom="5pt"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/eventImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/fire_sample"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageView
+                    android:id="@+id/eventTypeIcon"
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/fire"
+                    android:layout_alignBottom="@+id/eventImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:alpha="0.7" />
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30pt"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_height="20pt"
+                        android:layout_width="20pt"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/map"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Go to location"
+                        android:textSize="9pt"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:layout_marginLeft="5pt"/>
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_width="match_parent"
+                        android:text="10"
+                        android:textSize="9pt"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="false"
+                        android:gravity="center_vertical|end"/>
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_height="20pt"
+                        android:layout_width="20pt"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/police"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Call Police"
+                        android:textSize="9pt"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:layout_marginLeft="5pt"/>
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_width="match_parent"
+                        android:text="2"
+                        android:textSize="9pt"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="false"
+                        android:gravity="center_vertical|end"/>
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_height="20pt"
+                        android:layout_width="20pt"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ambulance"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Call Ambulance"
+                        android:textSize="9pt"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:layout_marginLeft="5pt"/>
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_width="match_parent"
+                        android:text="3"
+                        android:textSize="9pt"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="false"
+                        android:gravity="center_vertical|end"/>
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_height="20pt"
+                        android:layout_width="20pt"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/fireman"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Call Firemen"
+                        android:textSize="9pt"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:layout_marginLeft="5pt"/>
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_width="match_parent"
+                        android:text="1"
+                        android:textSize="9pt"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="false"
+                        android:gravity="center_vertical|end"/>
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_height="20pt"
+                        android:layout_width="20pt"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/phone"
+                        android:adjustViewBounds="true" />
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Call Custom Number"
+                        android:textSize="9pt"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:layout_marginLeft="5pt"/>
+
+                    <TextView
+                        android:layout_height="20pt"
+                        android:layout_width="match_parent"
+                        android:text="3"
+                        android:textSize="9pt"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentRight="false"
+                        android:gravity="center_vertical|end"/>
+
+                    <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                    </RelativeLayout>
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:paddingTop="2pt"
+        android:background="@android:color/background_dark"
+        android:alpha="0.8"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingLeft="5pt"
+            android:layout_height="25pt"
+            android:scaleType="fitStart"
+            android:src="@drawable/sign"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:layout_height="20pt"
+            android:scaleType="centerInside"
+            android:src="@drawable/options"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:onClick="showMenu"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
