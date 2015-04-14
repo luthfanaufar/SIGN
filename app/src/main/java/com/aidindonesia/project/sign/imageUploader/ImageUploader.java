@@ -1,4 +1,4 @@
-package imageuploader;
+package com.aidindonesia.project.sign.imageUploader;
 
 import java.io.File;
 

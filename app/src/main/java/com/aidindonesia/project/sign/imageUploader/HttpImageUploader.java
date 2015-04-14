@@ -1,4 +1,4 @@
-package imageuploader;
+package com.aidindonesia.project.sign.imageUploader;
 
 import android.util.Log;
 import java.io.BufferedReader;
